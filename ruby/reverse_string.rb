@@ -1,5 +1,8 @@
 def reverse_string(str)
-  # type your code in here
+  reversed = ''
+  str_arr = str.chars
+  reversed += str_arr.pop until str_arr.empty?
+  reversed
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -11,7 +14,8 @@ if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 'ybabtac'"
   puts "=>", reverse_string('catbaby')
 
-  # Don't forget to add your own!
+  puts "expecting: 'racecar'"
+  puts "=>", reverse_string('racecar')
 end
 
 # Please add your pseudocode to this file
